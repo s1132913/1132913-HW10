@@ -2,23 +2,23 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>1132913 -HW10</title>
+    <title>1132913 - HW10</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container" style="text-align: center; font-family: Arial, sans-serif;">
+    <div class="container">
         <h1>黑白棋 Othello</h1>
-        <div class="status-bar" style="margin-bottom: 10px;">
-            <span class="score">黑棋 (User): <b id="black-score">2</b></span> | 
-            <span class="score">白棋 (AI): <b id="white-score">2</b></span> | 
-            <span class="turn">當前回合: <b id="current-turn">黑棋</b></span>
+        <div class="status-bar">
+            <div class="score">黑棋 (User): <span id="black-score">2</span></div>
+            <div class="score">白棋 (AI): <span id="white-score">2</span></div>
+            <div class="turn">當前回合: <span id="current-turn">黑棋</span></div>
         </div>
         
         <div class="controls">
             AI 難度：
             <select id="ai-difficulty">
-                <option value="basic">基本棋力 (貪婪)</option>
-                <option value="advanced" selected>進階棋力 (權重)</option>
+                <option value="basic">基本棋力</option>
+                <option value="advanced">進階棋力</option>
             </select>
             <button onclick="resetGame()">重新開始</button>
         </div>
